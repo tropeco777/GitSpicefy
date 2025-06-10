@@ -116,8 +116,8 @@ This roadmap is subject to change based on:
 - Resource availability
 - Strategic partnerships
 
-**Last Updated**: December 2024  
-**Next Review**: March 2025
+**Last Updated**: June 2025  
+**Next Review**: July 2025
 
 ---
 
