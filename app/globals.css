@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import markdown preview styles */
+@import '@uiw/react-markdown-preview/markdown.css';
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply antialiased;
+  }
+}
+
+/* Custom overrides for @uiw/react-markdown-preview */
+.w-md-editor-text-pre .token.title {
+  color: inherit;
+}
+
+.wmde-markdown {
+  background-color: transparent !important;
+}
+
+.wmde-markdown img {
+  display: inline-block !important;
+  vertical-align: middle !important;
+  margin: 0 2px !important;
+}

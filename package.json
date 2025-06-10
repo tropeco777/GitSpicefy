@@ -1,0 +1,82 @@
+{
+  "name": "gitspicefy",
+  "version": "1.0.0",
+  "description": "AI-powered README generator that creates beautiful, professional documentation for your GitHub repositories",
+  "keywords": [
+    "readme",
+    "generator",
+    "ai",
+    "github",
+    "documentation",
+    "markdown",
+    "nextjs",
+    "typescript",
+    "supabase",
+    "openai",
+    "huggingface",
+    "repository",
+    "automation",
+    "developer-tools",
+    "open-source"
+  ],
+  "author": {
+    "name": "Hassan Shafique",
+    "email": "hsnshafique090@gmail.com",
+    "url": "https://github.com/anomusly"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anomusly/gitspicefy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anomusly/gitspicefy/issues"
+  },
+  "homepage": "https://gitspicefy.vercel.app",
+  "private": false,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "type-check": "tsc --noEmit",
+    "test": "echo \"No tests specified\" && exit 0",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@supabase/auth-ui-react": "^0.4.7",
+    "@supabase/auth-ui-shared": "^0.1.8",
+    "@supabase/supabase-js": "^2.50.0",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@uiw/react-markdown-preview": "^5.1.4",
+    "autoprefixer": "^10.4.21",
+    "bcryptjs": "^3.0.2",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "framer-motion": "^11.2.10",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.379.0",
+    "next": "14.2.3",
+    "next-themes": "^0.3.0",
+    "openai": "^5.2.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hot-toast": "^2.5.2",
+    "recharts": "^2.15.3",
+    "tailwind-merge": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
