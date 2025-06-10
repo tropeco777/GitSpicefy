@@ -1,6 +1,6 @@
 <div align="center">
   <img src="https://github.com/user-attachments/assets/f987e9c7-51d6-4356-924a-6167840d887f" alt="logo" width="200"/>
-  <h1>🚀 GitSpicefy</h1>
+  <h1>GitSpicefy</h1>
 
 ### *Transform Your Repositories with AI-Powered README Generation*
 
