@@ -148,7 +148,7 @@ This project is open source and available under the [MIT License](LICENSE).
 **Hassan Shafique**
 
 [![GitHub](https://img.shields.io/badge/GitHub-anomusly-black?style=for-the-badge&logo=github)](https://github.com/anomusly)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-blue?style=for-the-badge&logo=web)](https://github.com/anomusly)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-blue?style=for-the-badge&logo=web)](https://anomusly.vercel.app)
 
 *Passionate developer creating tools to make coding life easier* ✨
 
