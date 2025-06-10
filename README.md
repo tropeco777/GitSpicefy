@@ -35,91 +35,127 @@ Transform your GitHub repositories with professionally crafted README files gene
 - **Generation History**: Track all README generations with detailed logs
 - **System Monitoring**: Health checks and performance metrics
 
-## 🛠️ Tech Stack
+## 🏗️ Architecture
 
-- **Next.js 14** - React framework with App Router
-- **TypeScript** - Type-safe development
-- **Tailwind CSS** - Utility-first CSS framework
-- **Framer Motion** - Smooth animations and transitions
-- **Supabase** - Authentication and database
-- **GitHub API** - Repository data fetching
-- **React Markdown** - Markdown rendering with syntax highlighting
+### Tech Stack
+- **Frontend**: Next.js 14, React, TypeScript, Tailwind CSS
+- **Backend**: Next.js API Routes, Node.js
+- **Database**: Supabase (PostgreSQL)
+- **Authentication**: GitHub OAuth via Supabase Auth
+- **AI Integration**: OpenAI GPT-4, Anthropic Claude
+- **Deployment**: Vercel
 
-## 🚀 Getting Started
+### Project Structure
+```
+gitspicefy/
+├── app/                    # Next.js app directory
+│   ├── admin/             # Admin dashboard pages
+│   ├── api/               # API routes
+│   └── (main)/            # Main application pages
+├── components/            # Reusable React components
+├── lib/                   # Utility functions and configurations
+├── contexts/              # React contexts
+├── types/                 # TypeScript type definitions
+├── supabase/             # Database migrations and types
+└── public/               # Static assets
+```
+
+## 🚀 Quick Start
 
 ### Prerequisites
-
-- Node.js 18+ 
-- npm or yarn
-- GitHub account
+- Node.js 18+ and npm/yarn
+- Supabase account for database
+- AI API keys (OpenAI, Anthropic, etc.)
+- GitHub OAuth App (for authentication)
 
 ### Installation
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/gitspicefy.git
+   git clone https://github.com/yourusername/gitspicefy.git
    cd gitspicefy
    ```
 
 2. **Install dependencies**
    ```bash
    npm install
+   # or
+   yarn install
    ```
 
 3. **Set up environment variables**
    ```bash
-   cp .env.local.example .env.local
+   cp .env.example .env.local
    ```
 
-4. **Set up Supabase**
-   - Go to [Supabase Dashboard](https://supabase.com/dashboard)
-   - Create a new project
-   - Go to Settings > API and copy:
-     - Project URL → `NEXT_PUBLIC_SUPABASE_URL`
-     - anon/public key → `NEXT_PUBLIC_SUPABASE_ANON_KEY`
-   - Go to Authentication > Providers
-   - Enable GitHub OAuth provider
-   - Set Site URL to: `http://localhost:3000`
-   - Set Redirect URLs to: `http://localhost:3000/auth/callback`
+   Fill in your environment variables:
+   ```env
+   # Database
+   NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+   SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
 
-5. **Start the development server**
+   # AI Providers
+   OPENAI_API_KEY=your_openai_key
+   ANTHROPIC_API_KEY=your_anthropic_key
+
+   # GitHub OAuth
+   GITHUB_CLIENT_ID=your_github_client_id
+   GITHUB_CLIENT_SECRET=your_github_client_secret
+   NEXT_PUBLIC_GITHUB_CLIENT_ID=your_github_client_id
+
+   # Admin
+   ADMIN_JWT_SECRET=your_admin_jwt_secret
+   ```
+
+4. **Set up the database**
+   ```bash
+   # Run Supabase migrations
+   npx supabase db push
+   ```
+
+5. **Run the development server**
    ```bash
    npm run dev
+   # or
+   yarn dev
    ```
 
 6. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000)
 
-## 🔧 Configuration
+## � Usage
 
-### Environment Variables
+### For Users
 
-```env
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-```
+1. **Sign in with GitHub** - Authenticate using your GitHub account
+2. **Enter Repository URL** - Paste your GitHub repository URL
+3. **Choose Generation Type**:
+   - **Basic**: Quick README generation with essential sections
+   - **Advanced**: Comprehensive analysis with custom options (Premium)
+4. **Customize Options** (Advanced):
+   - Select sections to include
+   - Choose writing tone
+   - Add custom content
+5. **Generate & Download** - Get your professional README file
 
-### Repository Access
+### For Administrators
 
-The application works with:
-- ✅ **Public repositories** - Full access without authentication
-- ❌ **Private repositories** - Not supported in current version
-- 🔄 **Future**: Private repo support with GitHub OAuth
+Access the admin dashboard at `/admin/login`:
 
-## 📖 How It Works
+- **Dashboard**: Overview of platform metrics and performance
+- **Users**: Manage user accounts and subscription plans
+- **Generations**: View all README generation history
+- **Analytics**: Detailed insights and usage statistics
+- **System**: Monitor platform health and performance
+- **Settings**: Configure platform settings and features
 
-1. **Authentication** - Users sign in with their GitHub account
-2. **Repository Input** - Enter any GitHub repository URL
-3. **Analysis** - AI analyzes the repository structure, files, and dependencies
-4. **Generation** - Creates a comprehensive README with:
-   - Project description and features
-   - Installation instructions
-   - Tech stack information
-   - Project structure
-   - Contributing guidelines
-   - And much more!
-5. **Customization** - Edit and preview the generated documentation
-6. **Export** - Copy or download the final README
+## 💰 Pricing Plans
+
+- **Free Trial**: 1 README generation
+- **Starter Pack**: $3.99 one-time - 10 generations
+- **Monthly**: $14.99/month - 50 READMEs + advanced features
+- **Lifetime**: $54.99 one-time - Unlimited access + all features
 
 ## 🤝 Contributing
 
