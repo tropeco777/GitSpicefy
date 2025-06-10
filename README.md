@@ -1,5 +1,5 @@
 <div align="center">
-
+![logo](https://github.com/user-attachments/assets/f987e9c7-51d6-4356-924a-6167840d887f)
 # 🚀 GitSpicefy
 
 ### *Transform Your Repositories with AI-Powered README Generation*
