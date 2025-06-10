@@ -164,6 +164,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 **Made with ❤️ by [Hassan Shafique](https://github.com/anomusly)**
 
-*Last updated: December 2024 - Environment variables configured*
+*Last updated: June 2025 - Environment variables configured*
 
 </div>
